@@ -1,0 +1,74 @@
+:root {
+  --ink: #1d2433;
+  --paper: #f3f6fb;
+  --card: #ffffff;
+  --line: #d5dce8;
+  --accent: #2f5bea;
+  --accent-dark: #1f43b8;
+  --ok: #17803d;
+  --bad: #b3261e;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+  color: var(--ink);
+  background: var(--paper);
+  line-height: 1.55;
+}
+
+header {
+  background: var(--ink);
+  color: #fff;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+header img { width: 64px; height: 64px; }
+header h1 { margin: .5rem 0 .25rem; font-size: 2rem; }
+header p { margin: 0; color: #b9c3d9; }
+
+main { max-width: 760px; margin: 1.5rem auto; padding: 0 1rem; }
+
+section {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.25rem;
+}
+section h2 { margin-top: 0; font-size: 1.25rem; }
+
+button {
+  background: var(--accent);
+  color: #fff;
+  border: 0;
+  border-radius: 6px;
+  padding: .6rem 1.1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  margin: .25rem .5rem .25rem 0;
+}
+button:hover { background: var(--accent-dark); }
+button:disabled { background: #9aa6c4; cursor: not-allowed; }
+button:focus-visible, input:focus-visible { outline: 3px solid #f2b705; outline-offset: 2px; }
+
+input[type="text"] {
+  width: 100%;
+  padding: .6rem;
+  font-size: 1rem;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  margin-bottom: .5rem;
+}
+
+.value { font-weight: 600; word-break: break-all; }
+.box { background: var(--paper); border-left: 4px solid var(--accent); padding: .75rem 1rem; border-radius: 4px; }
+.ok { color: var(--ok); }
+.bad { color: var(--bad); }
+
+ul { padding-left: 1.2rem; }
+a { color: var(--accent); }
+
+footer { text-align: center; padding: 1.5rem 1rem 2.5rem; color: #5b6579; font-size: .9rem; }
